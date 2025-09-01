@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gemini Prompt</title>
+  <link rel="stylesheet" href="index.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/genai": "https://esm.sh/@google/genai@^0.7.0"
+      }
+    }
+  </script>
+  <script type="module" src="index.tsx"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Gemini Prompt</h1>
+    <form id="prompt-form">
+      <label for="prompt-input">Enter your prompt:</label>
+      <textarea id="prompt-input" name="prompt" rows="4" placeholder="e.g., Tell me a story about a friendly robot."></textarea>
+      <button id="prompt-button" type="submit">Generate</button>
+    </form>
+    <section id="output-container" aria-live="polite">
+      <h2>Response</h2>
+      <div id="output"></div>
+    </section>
+  </main>
+</body>
+</html>
